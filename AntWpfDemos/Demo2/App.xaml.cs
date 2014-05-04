@@ -5,7 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Windows;
 
-namespace Demo2
+namespace Demo02
 {
     /// <summary>
     /// App.xaml 的交互逻辑
