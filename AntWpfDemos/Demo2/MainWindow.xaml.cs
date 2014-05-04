@@ -11,9 +11,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Gods.Foundation;
 
-namespace Demo01
+namespace Demo2
 {
     /// <summary>
     /// MainWindow.xaml 的交互逻辑
@@ -23,14 +22,6 @@ namespace Demo01
         public MainWindow()
         {
             InitializeComponent();
-            //Style = FindResource(CustomResources.CustomWindowChromeKey) as Style;
-            //Style = FindResource("CustomWindowChrome") as Style;
-        }
-
-        private void Main_OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            this.DragMove();
-            e.Handled = true;
         }
     }
 }

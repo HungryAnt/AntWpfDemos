@@ -3,8 +3,20 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:res="clr-namespace:Gods.Foundation;assembly=Gods.Foundation"
         Title="" Height="350" Width="580">
-    <Grid Background="{StaticResource {ComponentResourceKey TypeInTargetAssembly={x:Type res:CustomResources}, ResourceId=AntBrush}}"
+<!--Style="{DynamicResource {x:Static res:CustomResources.CustomWindowChromeKey}}">-->
+    <Window.Resources>
+        <SolidColorBrush x:Key="xxx" Color="Tomato"></SolidColorBrush>
+    </Window.Resources>
+    <Grid Background="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type res:CustomResources}, ResourceId=AntBrush}}"
           MouseLeftButtonDown="Main_OnMouseLeftButtonDown">
-        
+<!--        <Grid>-->
+<!--            <Grid.Background>-->
+<!--                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">-->
+<!--                    <GradientStop Color="#FFCE3D3D" Offset="0" />-->
+<!--                    <GradientStop Color="White" Offset="1" />-->
+<!--                </LinearGradientBrush>-->
+<!--            </Grid.Background>-->
+<!--        </Grid>-->
+<!--        <Grid Background="{StaticResource xxx}"></Grid>-->
     </Grid>
 </Window>

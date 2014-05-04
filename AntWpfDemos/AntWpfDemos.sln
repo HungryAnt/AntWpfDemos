@@ -5,7 +5,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntWpfDemos", "AntWpfDemos.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gods.Foundation", "..\Gods.Foundation\Gods.Foundation.csproj", "{5AA9AA8A-6E27-475A-BDB3-8861DDD860E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo01", "Demo01\Demo01.csproj", "{72B00134-0087-4A53-8D99-95C6F3652517}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo01_WindowStyle", "Demo01\Demo01_WindowStyle.csproj", "{72B00134-0087-4A53-8D99-95C6F3652517}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo2", "Demo2\Demo2.csproj", "{AAFB730C-C9C6-460C-BC75-4EE118A6C0F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,16 @@ Global
 		{72B00134-0087-4A53-8D99-95C6F3652517}.Release|Mixed Platforms.Build.0 = Release|x86
 		{72B00134-0087-4A53-8D99-95C6F3652517}.Release|x86.ActiveCfg = Release|x86
 		{72B00134-0087-4A53-8D99-95C6F3652517}.Release|x86.Build.0 = Release|x86
+		{AAFB730C-C9C6-460C-BC75-4EE118A6C0F0}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{AAFB730C-C9C6-460C-BC75-4EE118A6C0F0}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{AAFB730C-C9C6-460C-BC75-4EE118A6C0F0}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{AAFB730C-C9C6-460C-BC75-4EE118A6C0F0}.Debug|x86.ActiveCfg = Debug|x86
+		{AAFB730C-C9C6-460C-BC75-4EE118A6C0F0}.Debug|x86.Build.0 = Debug|x86
+		{AAFB730C-C9C6-460C-BC75-4EE118A6C0F0}.Release|Any CPU.ActiveCfg = Release|x86
+		{AAFB730C-C9C6-460C-BC75-4EE118A6C0F0}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{AAFB730C-C9C6-460C-BC75-4EE118A6C0F0}.Release|Mixed Platforms.Build.0 = Release|x86
+		{AAFB730C-C9C6-460C-BC75-4EE118A6C0F0}.Release|x86.ActiveCfg = Release|x86
+		{AAFB730C-C9C6-460C-BC75-4EE118A6C0F0}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
