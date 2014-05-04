@@ -1,0 +1,10 @@
+﻿<Window x:Class="Demo01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:res="clr-namespace:Gods.Foundation;assembly=Gods.Foundation"
+        Title="" Height="350" Width="580">
+    <Grid Background="{StaticResource {ComponentResourceKey TypeInTargetAssembly={x:Type res:CustomResources}, ResourceId=AntBrush}}"
+          MouseLeftButtonDown="Main_OnMouseLeftButtonDown">
+        
+    </Grid>
+</Window>
