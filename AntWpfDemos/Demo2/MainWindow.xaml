@@ -11,14 +11,18 @@
         </ResourceDictionary>
     </Window.Resources>
     <Grid>
-        <TabControl VerticalAlignment="Stretch" Style="{StaticResource EditorTabControlStyle}">
-<!--                    Style="{StaticResource MainTabControlStyle}">-->
+        <TabControl VerticalAlignment="Stretch" >
+<!--            Style="{StaticResource MainTabControlStyle}">-->
+<!--                    Style="{StaticResource EditorTabControlStyle}">-->
             <TabControl.Resources>
 <!--                <Style BasedOn="{StaticResource MainTabItemStyle}" TargetType="TabItem">-->
 <!--                    <Setter Property="Padding" Value="10"/>-->
 <!--                </Style>-->
-                <Style BasedOn="{StaticResource EditorTabItemStyle}" TargetType="TabItem">
-                </Style>
+<!--                <Style BasedOn="{StaticResource EditorTabItemStyle}" TargetType="TabItem">-->
+<!--                    <Setter Property="Padding" Value="10"/>-->
+<!--                    <Setter Property="MinHeight" Value="40"/>-->
+<!--                    <Setter Property="MinWidth" Value="110"/>-->
+<!--                </Style>-->
             </TabControl.Resources>
             
             <TabItem Header="用户1">
