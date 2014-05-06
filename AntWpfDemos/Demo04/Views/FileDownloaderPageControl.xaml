@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="Demo04.Views.FileDownloaderPageControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="312" d:DesignWidth="570">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+            <TextBlock>文件地址:</TextBlock>
+            <TextBox Margin="10,0,0,0" MinWidth="300" Text="{Binding Path=FileUrl,UpdateSourceTrigger=PropertyChanged}"></TextBox>
+            <Button Margin="10,0,0,0" MinWidth="80" Command="{Binding Path=DownloadCommand}">下载</Button>
+        </StackPanel>
+        <ListBox Grid.Row="1" ItemsSource="{Binding Path=FileInfoViewModels}" Grid.RowSpan="2">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border Height="50" Background="Thistle">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Text="{Binding Path=Name}"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</UserControl>
