@@ -46,29 +46,56 @@ namespace Demo04.ViewModels
             }
         }
 
-        private long _fileTotalSize;
+        private int _progressPercentage;
 
-        public long FileTotalSize
+        public int ProgressPercentage
         {
-            get { return _fileTotalSize; }
+            get { return _progressPercentage; }
             set
             {
-                _fileTotalSize = value;
-                RaisePropertyChanged("FileTotalSize");
+                _progressPercentage = value;
+                RaisePropertyChanged("ProgressPercentage");
             }
         }
 
-        private long _fileCurrentSize;
+        private DownloadState _downloadState;
 
-        public long FileCurrentSize
+        public DownloadState DownloadState
         {
-            get { return _fileCurrentSize; }
+            get { return _downloadState; }
             set
             {
-                _fileCurrentSize = value;
-                RaisePropertyChanged("FileCurrentSize");
+                _downloadState = value;
+                RaisePropertyChanged("DownloadState");
             }
         }
+        
+        
+        
+
+//        private long _fileTotalSize;
+//
+//        public long FileTotalSize
+//        {
+//            get { return _fileTotalSize; }
+//            set
+//            {
+//                _fileTotalSize = value;
+//                RaisePropertyChanged("FileTotalSize");
+//            }
+//        }
+//
+//        private long _fileCurrentSize;
+//
+//        public long FileCurrentSize
+//        {
+//            get { return _fileCurrentSize; }
+//            set
+//            {
+//                _fileCurrentSize = value;
+//                RaisePropertyChanged("FileCurrentSize");
+//            }
+//        }
 
         public static FileInfoViewModel FromNewFileInfo(string fileName, string fileUrl, string localPath)
         {

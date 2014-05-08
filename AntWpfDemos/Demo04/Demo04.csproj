@@ -56,6 +56,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Models\FileInfoEntity.cs" />
+    <Compile Include="Utils\FileDownloader\FileDownloader.cs" />
+    <Compile Include="Utils\FileDownloader\HttpDownloadUtility.cs" />
+    <Compile Include="Utils\FileDownloader\SyncFileDownloader.cs" />
+    <Compile Include="ViewModels\DownloadState.cs" />
     <Compile Include="ViewModels\FileDownloaderPageViewModel.cs" />
     <Compile Include="ViewModels\FileInfoViewModel.cs" />
     <Compile Include="Views\FileDownloaderPageControl.xaml.cs">
@@ -103,9 +107,7 @@
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Utils\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\..\Gods.Foundation\Gods.Foundation.csproj">
       <Project>{5AA9AA8A-6E27-475A-BDB3-8861DDD860E6}</Project>

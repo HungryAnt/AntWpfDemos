@@ -10,19 +10,48 @@
             <RowDefinition Height="60" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-            <TextBlock>文件地址:</TextBlock>
-            <TextBox Margin="10,0,0,0" MinWidth="300" Text="{Binding Path=FileUrl,UpdateSourceTrigger=PropertyChanged}"></TextBox>
-            <Button Margin="10,0,0,0" MinWidth="80" Command="{Binding Path=DownloadCommand}">下载</Button>
-        </StackPanel>
-        <ListBox Grid.Row="1" ItemsSource="{Binding Path=FileInfoViewModels}" Grid.RowSpan="2">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid VerticalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock VerticalAlignment="Center">文件网址:</TextBlock>
+                <TextBox Grid.Column="1" Text="{Binding Path=FileUrl,UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBlock Grid.Row="1" VerticalAlignment="Center">文件本地路径:</TextBlock>
+                <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding Path=FileLocalPath,UpdateSourceTrigger=PropertyChanged}"/>
+            </Grid>
+            <Button Grid.Column="1" Margin="10,0,0,0" MinWidth="80" Command="{Binding Path=DownloadCommand}">下载</Button>
+        </Grid>
+
+        <ListBox Grid.Row="1" ItemsSource="{Binding Path=FileInfoViewModels}" HorizontalContentAlignment="Stretch" 
+                 ItemContainerStyle="{StaticResource AntListBoxItemContainerStyle_1}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <Border Height="50" Background="Thistle">
-                        <StackPanel Orientation="Vertical">
+                    <Border Background="{Binding Path=Background, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ListBoxItem}}}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                            </Grid.RowDefinitions>
                             <TextBlock Text="{Binding Path=Name}"/>
-                        </StackPanel>
+                            <ProgressBar x:Name="PROGRESS_BAR" Grid.Row="1" Maximum="100" Value="{Binding Path=ProgressPercentage}"/>
+                        </Grid>
                     </Border>
+                    <DataTemplate.Triggers>
+                        <DataTrigger Binding="{Binding Path=DownloadState}" Value="Successful">
+                            <Setter TargetName="PROGRESS_BAR" Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+                    </DataTemplate.Triggers>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
