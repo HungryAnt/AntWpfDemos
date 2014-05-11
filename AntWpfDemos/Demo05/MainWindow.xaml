@@ -1,0 +1,51 @@
+﻿<Window x:Class="Demo05.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="676">
+    <Grid>
+        <TabControl>
+            <TabItem Header="内容控件">
+                <Grid>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button VerticalAlignment="Center" Margin="10">Hello WPF</Button>
+                        <Button VerticalAlignment="Center" Margin="10">
+                            <Image Width="64" Source="/Resources/Images/eventRecord.png"/>
+                        </Button>
+                        <Button VerticalAlignment="Center" Margin="10">
+                            <StackPanel Orientation="Vertical">
+                                <Image Margin="5" Width="32" Source="/Resources/Images/homePage.ico"/>
+                                <TextBlock Margin="3,0,3,0">My House</TextBlock>
+                                <Button>Click me</Button>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="带有标题的内容控件">
+                <Grid>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="文本控件">
+                <Grid>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="列表控件">
+                <Grid>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="基于范围的控件">
+                <Grid>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="日期控件">
+                <Grid>
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
