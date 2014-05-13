@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo04", "Demo04\Demo04.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo05_Controls", "Demo05\Demo05_Controls.csproj", "{524EBD51-2677-4034-9A86-4F528CE84ACF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo06_Animation", "Demo06\Demo06_Animation.csproj", "{BDAAEF37-FA45-46AB-A09C-2D65DCB5D40D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,16 @@ Global
 		{524EBD51-2677-4034-9A86-4F528CE84ACF}.Release|Mixed Platforms.Build.0 = Release|x86
 		{524EBD51-2677-4034-9A86-4F528CE84ACF}.Release|x86.ActiveCfg = Release|x86
 		{524EBD51-2677-4034-9A86-4F528CE84ACF}.Release|x86.Build.0 = Release|x86
+		{BDAAEF37-FA45-46AB-A09C-2D65DCB5D40D}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{BDAAEF37-FA45-46AB-A09C-2D65DCB5D40D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{BDAAEF37-FA45-46AB-A09C-2D65DCB5D40D}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{BDAAEF37-FA45-46AB-A09C-2D65DCB5D40D}.Debug|x86.ActiveCfg = Debug|x86
+		{BDAAEF37-FA45-46AB-A09C-2D65DCB5D40D}.Debug|x86.Build.0 = Debug|x86
+		{BDAAEF37-FA45-46AB-A09C-2D65DCB5D40D}.Release|Any CPU.ActiveCfg = Release|x86
+		{BDAAEF37-FA45-46AB-A09C-2D65DCB5D40D}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{BDAAEF37-FA45-46AB-A09C-2D65DCB5D40D}.Release|Mixed Platforms.Build.0 = Release|x86
+		{BDAAEF37-FA45-46AB-A09C-2D65DCB5D40D}.Release|x86.ActiveCfg = Release|x86
+		{BDAAEF37-FA45-46AB-A09C-2D65DCB5D40D}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

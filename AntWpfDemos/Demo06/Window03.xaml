@@ -1,0 +1,53 @@
+﻿<Window x:Class="Demo06.Window03"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window03" Height="374" Width="422">
+    <Window.Triggers>
+        <EventTrigger SourceName="btnStart" RoutedEvent="Button.Click">
+            <BeginStoryboard x:Name="fadeStoryBoardBegin">
+                <Storyboard>
+<!--                    <DoubleAnimation Storyboard.TargetName="imgDay" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:5"/>-->
+                    <DoubleAnimation Storyboard.TargetName="transparentStop" Storyboard.TargetProperty="Offset" From="-0.2" To="1" Duration="0:0:5"/>
+                    <DoubleAnimation Storyboard.TargetName="visibleStop" Storyboard.TargetProperty="Offset" From="0" To="1.2" Duration="0:0:5"/>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+        <EventTrigger SourceName="btnPause" RoutedEvent="Button.Click">
+            <PauseStoryboard BeginStoryboardName="fadeStoryBoardBegin"/>
+        </EventTrigger>
+        <EventTrigger SourceName="btnResume" RoutedEvent="Button.Click">
+            <ResumeStoryboard BeginStoryboardName="fadeStoryBoardBegin"/>
+        </EventTrigger>
+        <EventTrigger SourceName="btnStop" RoutedEvent="Button.Click">
+            <StopStoryboard BeginStoryboardName="fadeStoryBoardBegin"/>
+        </EventTrigger>
+        <EventTrigger SourceName="btnMiddle" RoutedEvent="Button.Click">
+            <SeekStoryboard BeginStoryboardName="fadeStoryBoardBegin" Offset="0:0:2.5"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid>
+            <Image Source="/Images/night.jpg"/>
+            <Image x:Name="imgDay" Source="/Images/day.jpg">
+                <Image.OpacityMask>
+                    <LinearGradientBrush>
+                        <GradientStop Offset="0" Color="Transparent" x:Name="transparentStop"/>
+                        <GradientStop Offset="0" Color="Black" x:Name="visibleStop"/>
+                    </LinearGradientBrush>
+                </Image.OpacityMask>
+            </Image>
+        </Grid>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <Button x:Name="btnStart">Start</Button>
+            <Button x:Name="btnPause">Pause</Button>
+            <Button x:Name="btnResume">Resume</Button>
+            <Button x:Name="btnStop">Stop</Button>
+            <Button x:Name="btnMiddle">Move To Middle</Button>
+        </StackPanel>
+    </Grid>
+
+</Window>
