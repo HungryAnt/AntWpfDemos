@@ -52,15 +52,15 @@ namespace Demo06
             uiElement.SetValue(FrameworkElement.HeightProperty, _itemWidth);
 
 
-            double itemCenterX = _itemDistance*Cos(_currentAngle) + _currentMainCircleRadius;
-            double itemCenterY = _itemDistance*Sin(_currentAngle) + _currentMainCircleRadius;
+            double itemCenterX = _itemDistance*Cos(_currentAngle) + LARGE_CIRCLE_RADIUS;
+            double itemCenterY = _itemDistance*Sin(_currentAngle) + LARGE_CIRCLE_RADIUS;
 
             double itemLeft = itemCenterX - _itemRadius;
             double itemTop = itemCenterY - _itemRadius;
 
             DoubleAnimation xLocAnimation = new DoubleAnimation()
                 {
-                    From = _currentMainCircleRadius - _itemRadius,
+                    From = LARGE_CIRCLE_RADIUS - _itemRadius,
                     To = itemLeft,
                     Duration = TimeSpan.FromSeconds(0.3),
                     AccelerationRatio = 1, // 始终加速
@@ -68,7 +68,7 @@ namespace Demo06
 
             DoubleAnimation yLocAnimation = new DoubleAnimation()
                 {
-                    From = _currentMainCircleRadius - _itemRadius,
+                    From = LARGE_CIRCLE_RADIUS - _itemRadius,
                     To = itemTop,
                     Duration = TimeSpan.FromSeconds(0.3),
                     AccelerationRatio = 1,
