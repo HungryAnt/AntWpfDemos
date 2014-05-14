@@ -61,6 +61,16 @@
     <Compile Include="Window03.xaml.cs">
       <DependentUpon>Window03.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Window04.xaml.cs">
+      <DependentUpon>Window04.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window05.xaml.cs">
+      <DependentUpon>Window05.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window05\FunnyItemControl.xaml.cs">
+      <DependentUpon>FunnyItemControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window05\FunnyItemsPanel.cs" />
     <Page Include="Window01.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -78,6 +88,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Window03.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window04.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window05.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window05\FunnyItemControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -110,6 +132,7 @@
     <Resource Include="Images\day.jpg" />
     <Resource Include="Images\night.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
