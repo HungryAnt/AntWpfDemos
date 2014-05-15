@@ -71,6 +71,9 @@
       <DependentUpon>FunnyItemControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Window05\FunnyItemsPanel.cs" />
+    <Compile Include="Window06.xaml.cs">
+      <DependentUpon>Window06.xaml</DependentUpon>
+    </Compile>
     <Page Include="Window01.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -103,6 +106,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Window06.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -132,7 +139,12 @@
     <Resource Include="Images\day.jpg" />
     <Resource Include="Images\night.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Window06\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Baidu_256.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
