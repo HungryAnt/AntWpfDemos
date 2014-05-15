@@ -27,6 +27,7 @@
                 </BeginStoryboard>
             </EventTrigger>
         </Grid.Triggers>
+        
         <Ellipse HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Fill="#8E59D159"/>
 <!--        <Ellipse HorizontalAlignment="Center" VerticalAlignment="Center" Fill="#FFD26C6C" Width="100" Height="100"/>-->
 <!--        <Ellipse HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Height="50" StrokeThickness="10">-->
@@ -38,6 +39,8 @@
 <!--                </RadialGradientBrush>-->
 <!--            </Ellipse.Stroke>-->
 <!--        </Ellipse>-->
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">Hello Wpf</TextBlock>
+        <Viewbox Margin="10">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">Hello Wpf</TextBlock>
+        </Viewbox>
     </Grid>
 </UserControl>

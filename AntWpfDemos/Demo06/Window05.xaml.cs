@@ -53,5 +53,11 @@ namespace Demo06
         {
             funnyItemsPanel.Children.Add(new FunnyItemControl());
         }
+
+        private void FunnyItemsPanel_OnPreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+            e.Handled = true;
+        }
     }
 }

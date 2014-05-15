@@ -2,9 +2,10 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Window05" Height="881" Width="829"
-        Loaded="Window05_OnLoaded" xmlns:my="clr-namespace:Demo06">
+        Loaded="Window05_OnLoaded" xmlns:my="clr-namespace:Demo06"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent">
     <Grid>
-        <my:FunnyItemsPanel x:Name="funnyItemsPanel" Width="600" Height="600" Margin="100">
+        <my:FunnyItemsPanel x:Name="funnyItemsPanel" Width="600" Height="600" Margin="100" PreviewMouseDown="FunnyItemsPanel_OnPreviewMouseDown">
             <my:FunnyItemControl/>
         </my:FunnyItemsPanel>
 <!--        <Canvas x:Name="canvas">-->
