@@ -11,9 +11,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Gods.Foundation;
 
-namespace Demo01
+namespace Demo08
 {
     /// <summary>
     /// MainWindow.xaml 的交互逻辑
@@ -23,14 +22,21 @@ namespace Demo01
         public MainWindow()
         {
             InitializeComponent();
-            Style = FindResource(CustomResources.CustomWindowChromeKey) as Style;
-            //Style = FindResource("CustomWindowChrome") as Style;
         }
 
-        private void Main_OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void BtnChange_OnClick(object sender, RoutedEventArgs e)
         {
-            this.DragMove();
-            e.Handled = true;
+            ImageBrush imageBrush =
+                new ImageBrush(new BitmapImage(new Uri("pack://application:,,,/Demo08;component/Images/a2.jpg")))
+                    {
+                        TileMode = TileMode.Tile,
+                        ViewportUnits = BrushMappingMode.Absolute,
+                        Viewport = new Rect(0,0,32,32),
+                        Opacity = 0.3
+                    };
+
+            Resources["TileBrush"] = imageBrush;
+
         }
     }
 }

@@ -1,0 +1,20 @@
+﻿<Window x:Class="Demo07.Window01_SliderBinding"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window01_SliderBinding" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Slider x:Name="sliderFontSize" Grid.Row="0" Margin="10" Minimum="1" Maximum="100" Value="10" TickFrequency="1" TickPlacement="TopLeft"/>
+        <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                   FontSize="{Binding ElementName=sliderFontSize,Path=Value}">Simple Text</TextBlock>
+        
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:Name="btnSetSmall" Click="BtnSetSmall_OnClick" Width="100" Height="30" Margin="5">Set to Small</Button>
+            <Button x:Name="btnSetNormal" Click="BtnSetNormal_OnClick" Width="100" Height="30" Margin="5">Set to Normal</Button>
+        </StackPanel>
+    </Grid>
+</Window>

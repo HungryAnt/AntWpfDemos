@@ -11,26 +11,27 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Gods.Foundation;
 
-namespace Demo01
+namespace Demo07
 {
     /// <summary>
-    /// MainWindow.xaml 的交互逻辑
+    /// Window01_SliderBinding.xaml 的交互逻辑
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Window01_SliderBinding : Window
     {
-        public MainWindow()
+        public Window01_SliderBinding()
         {
             InitializeComponent();
-            Style = FindResource(CustomResources.CustomWindowChromeKey) as Style;
-            //Style = FindResource("CustomWindowChrome") as Style;
         }
 
-        private void Main_OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void BtnSetSmall_OnClick(object sender, RoutedEventArgs e)
         {
-            this.DragMove();
-            e.Handled = true;
+            sliderFontSize.Value = 10;
+        }
+
+        private void BtnSetNormal_OnClick(object sender, RoutedEventArgs e)
+        {
+            sliderFontSize.Value = 45;
         }
     }
 }
