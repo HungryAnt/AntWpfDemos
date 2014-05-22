@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo02_TabControl_Template"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo03", "Demo03\Demo03.csproj", "{40D852D9-252B-48C4-B620-EBDC6C519854}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo04", "Demo04\Demo04.csproj", "{C8626765-C612-4722-B700-C92474F68D55}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo04_FileDownloader", "Demo04\Demo04_FileDownloader.csproj", "{C8626765-C612-4722-B700-C92474F68D55}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo05_Controls", "Demo05\Demo05_Controls.csproj", "{524EBD51-2677-4034-9A86-4F528CE84ACF}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo07_Binding", "Demo07\Demo07_Binding.csproj", "{49E05769-F4E6-44B9-A4BB-D9B0F7C2268E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo08_Resource", "Demo08\Demo08_Resource.csproj", "{48E71D87-10DA-4662-968F-57E43F60A8E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo09_Xaml", "Demo09\Demo09_Xaml.csproj", "{951ABA90-1716-4D73-8205-44393890704F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -119,6 +121,16 @@ Global
 		{48E71D87-10DA-4662-968F-57E43F60A8E5}.Release|Mixed Platforms.Build.0 = Release|x86
 		{48E71D87-10DA-4662-968F-57E43F60A8E5}.Release|x86.ActiveCfg = Release|x86
 		{48E71D87-10DA-4662-968F-57E43F60A8E5}.Release|x86.Build.0 = Release|x86
+		{951ABA90-1716-4D73-8205-44393890704F}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{951ABA90-1716-4D73-8205-44393890704F}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{951ABA90-1716-4D73-8205-44393890704F}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{951ABA90-1716-4D73-8205-44393890704F}.Debug|x86.ActiveCfg = Debug|x86
+		{951ABA90-1716-4D73-8205-44393890704F}.Debug|x86.Build.0 = Debug|x86
+		{951ABA90-1716-4D73-8205-44393890704F}.Release|Any CPU.ActiveCfg = Release|x86
+		{951ABA90-1716-4D73-8205-44393890704F}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{951ABA90-1716-4D73-8205-44393890704F}.Release|Mixed Platforms.Build.0 = Release|x86
+		{951ABA90-1716-4D73-8205-44393890704F}.Release|x86.ActiveCfg = Release|x86
+		{951ABA90-1716-4D73-8205-44393890704F}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
