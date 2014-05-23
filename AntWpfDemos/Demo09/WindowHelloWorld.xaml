@@ -3,12 +3,17 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
         xmlns:demo09="clr-namespace:Demo09"
         Title="WindowHelloWorld" Height="300" Width="300">
-    <Grid>
+    <Window.Resources>
+        <Style x:Key="MyButtonStyle" TargetType="Button">
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+    </Window.Resources>
+    <Grid x:Name="grid1">
         <Grid.RowDefinitions>
-            <RowDefinition Height="50*" />
-            <RowDefinition Height="211*" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <Border CornerRadius="30" Background="Bisque" Padding="10">
+        <Border CornerRadius="30" Padding="10">
             <Button Margin="100,0,0,0" Content="Button">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
@@ -25,7 +30,24 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
+            <Border.Background>
+                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                    <GradientStop Color="#FF3BC1C1" Offset="0" />
+                    <GradientStop Color="White" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
         </Border>
         <demo09:MyControl Grid.Row="1"></demo09:MyControl>
     </Grid>
+<!--    <Grid>-->
+<!--        <Grid.RowDefinitions>-->
+<!--            <RowDefinition Height="53*" />-->
+<!--            <RowDefinition Height="208*" />-->
+<!--        </Grid.RowDefinitions>-->
+<!--        <Border Background="BurlyWood" CornerRadius="30">-->
+<!--            -->
+<!--        </Border>-->
+<!--        <demo09:MyControl Grid.Row="1"></demo09:MyControl>-->
+<!--        <Button Grid.Row="1" ButtonBase.Click="ButtonBase_OnClick"/>-->
+<!--    </Grid>-->
 </Window>

@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Gods.Foundation;
 
 namespace Demo04
 {
@@ -22,6 +23,13 @@ namespace Demo04
         public MainWindow()
         {
             InitializeComponent();
+            Style = FindResource(CustomResources.CustomWindowChromeKey) as Style;
+        }
+
+        private void Main_OnMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+            e.Handled = true;
         }
     }
 }

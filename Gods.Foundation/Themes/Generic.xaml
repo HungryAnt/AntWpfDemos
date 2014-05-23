@@ -20,8 +20,8 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
-    <SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:CustomResources}, ResourceId=AntBrush}" Color="YellowGreen">
+
+    <SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:CustomResources}, ResourceId=AntBrush}" Color="#A147B8FF">
     </SolidColorBrush>
     
 </ResourceDictionary>

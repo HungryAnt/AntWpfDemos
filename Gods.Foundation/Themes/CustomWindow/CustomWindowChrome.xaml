@@ -50,7 +50,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Window}">
-                    <Border x:Name="BD" CornerRadius="1" BorderBrush="#FF2E2E2E" Background="Black" BorderThickness="1">
+                    <Border x:Name="BD" CornerRadius="1" BorderBrush="#FF2E2E2E" Background="Transparent" BorderThickness="1">
                         <Grid>
                             <Grid x:Name="Main"> <!--MouseLeftButtonDown="mainPanel_MouseLeftButtonDown"-->
                                 <Grid.ColumnDefinitions>
